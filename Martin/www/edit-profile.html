@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>PR-OJEK : Edit Profile </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale= 1">
+        <link rel="stylesheet" type="text/css" href="">
+    </head>
+    <body>
+        <div class="edit-profile">
+            <h1> Edit-Profile</h1>
+            <div class="edit-profile-information">
+                <h1> EDIT PROFILE INFORMATION </h1>
+                <div class="profile-picture">
+                    <img id="user-picture-box" src="/www/src/profile_sample_circle.PNG">
+                    <div class="update-profile-picture">
+                        <form action="/update_profile.php" method="POST">
+                            Update profile picture <br/>
+                            <input type="text" name="user-picture-path" id="user-picture-path">
+                            <input type="file" name="user-picture-image" id="user-picture-image" value="Browse...">
+                        </form>
+                    </div>
+                </div>
+                <div class="edit-profile-data">
+                    <form action="/update_profile.php" method="POST">
+                        Your Name
+                        <input type="text" name="user-fullname" id="user-fullname"> <br/>
+                        Phone Number
+                        <input type="text" name="user-phone" id="user-phone" pattern="[0-9]" title="Only accepts numbers"><br/>
+                        Status Driver
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label> <br/> <br/>
+                        <button type="button" id="edit-profile-back-button" onclick="location.href='/www/profile.html'"><img src="src/edit-profile_back.PNG" alt="Submit" width="48" height="48"></button>
+                        <input type="image" id="save-button" src="src/edit-profile_submit.PNG" alt="Submit" width="48" height="48">
+                    </form>
+                </div>
+            </div>
+        </div>        
+    </body>
+</html>

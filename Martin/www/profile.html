@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>PR-OJEK : Profile </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale= 1">
+        <link rel="stylesheet" type="text/css" href="">
+    </head>
+    <body>
+        <div class="profile-containter-top">
+            <a class="PR-OJEK-logo" href=""> <img src="src/PR-OJEK_logo.PNG"> </a>
+            <div class="username-identifier-and-control">
+                <p id="username-greetings"> Hi, <span id="username"> Martin </span> </p>
+                <a href="/www/index.html"> Logout </a>
+            </div>
+        </div>
+        <div class="profile-topnavigation">
+            <button type="button" name="order"> Order </button>
+            <button type="button" name="history"> History </button>
+            <button type="button" name="myprofile"> My Profile </button>
+        </div>
+        <div class="profile-and-preferred-locations-main">
+            <div class="profile-update">
+                <p id="profile-update-text"> My Profile</p>
+                <button type="button" name="profile-update-button" onclick="location.href='/www/edit-profile.html'"><img src="src/edit_button.PNG"></button>
+            </div>
+            <div class="user-profile">
+                <img src="src/profile_sample_circle.PNG">
+                <p id="username">@Martin</p>
+                <p id="user-full-name"> Martin Lutta Putra </p>
+                <div class="driver-status-and-ratings">
+                    <p id="driver-status"> 
+                        <span id="user-status"> Driver | </span>
+                        <span id="user-stars"> 4.7 </span>
+                        <span id="user-votes"> (1000 votes) </span>
+                    </p>
+                </div>
+                <p id="user-email"> 13515121@std.stei.itb.ac.id </p>
+                <p id="user-phone"> 085780058876 </p>
+            </div>
+            <div class="user-preferred-locations">
+                <p id="preferred-locations-text"> Preferred locations : </p>
+                <button type="button" name="preferred-locations-update-button" onclick="location.href = 'edit-preferred-locations.html'"><img src="src/edit_button.PNG"></button>
+                <div class="user-preferred-locations-list">
+                    <ul id="locations-list">
+                        <li id="item1"> Bandung </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

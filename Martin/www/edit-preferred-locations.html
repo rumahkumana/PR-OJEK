@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>PR-OJEK : Edit Preferred Locations </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale= 1">
+        <link rel="stylesheet" type="text/css" href="">
+    </head>
+    <body>
+        <div class="edit-preferred-location">
+            <h1> Edit-Preferred-Location</h1>
+            <div class="edit-profile-information">
+                <h1> EDIT PREFERRED LOCATIONS </h1>
+                <table id="preferred-locations-table">
+                    <tr id="preferred-locations-table-header">
+                        <th> No </th>
+                        <th> Location </th>
+                        <th> Actions </th>
+                    </tr>
+                    <div class="preferred-locations-table-rows">
+                        <tr>
+                            <th> 1 </th>
+                            <th> Bandung </th>
+                            <th> <img class="preferred-locations-edit-button" id="edit-button-row1" src="src/preferred-location-edit_button.PNG"> <img class="preferred-locations-edit-button" id="remove-button-row1" src="src/preferred-location-remove_button.PNG"> </th>
+                        </tr>
+                    </div>
+                </table> <br/>
+                <div class="add-new-location">
+                    <form action="/add-preferred-locations.php" method="GET">
+                        ADD NEW LOCATION <br/>
+                        <input type="text" name="location-input" id="location-input">
+                        <input type="image" src="src/edit-preferred-locations_button.PNG"  alt="Add location" height="48" width="48"> <br/>
+                        <button type="button" id="edit-preferred-locations-back-button" onclick="location.href='/www/profile.html'"><img src="src/edit-preferred-locations_backPNG.PNG"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
