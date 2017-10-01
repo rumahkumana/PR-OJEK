@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div.profile-container-top {
+    display: block;
+    border: 3px solid red;
+}
+
+div.profile-container-top::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+a.PR-OJEK-logo {
+    float: left;
+    border: 3px solid #73AD21;
+}
+div.username-identifier-and-control{
+    float: right;
+}
+div.profile-topnavigation ul {
+    clear: left;
+    clear: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 3px solid black;
+}
+div.profile-topnavigation li {
+    width: 30%;
+    float: left;
+    border: 3px solid #73AD21;
+}
+div.profile-topnavigation li a {
+    display: block;
+    font-family: sans-serif;
+    color: dimgrey;
+    text-align: center;
+    padding: 14px 16px;
+    border: 1px grey;
+    text-decoration: none;
+}
+div.profile-topnavigation li a:hover {
+    background-color: lightgrey;
+    color: white;
+}
+div.profile-update {
+    display: block;
+    width: 100%;
+    border: 3px solid #73AD21;
+}
+div.profile-update p {
+    float: left;
+}
+div.profile-update img {
+    float: right;
+}
+div.profile-and-preferred-locations-main {
+    position: relative;
+}
+div.user-profile {
+    text-align: center;
+}
+#userpp {
+    margin-left: 100px;
+}

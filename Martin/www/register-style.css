@@ -1,0 +1,39 @@
+body {
+    background-color: limegreen;
+}
+
+div.fieldname {
+    float: left;
+    width: 50%;
+}
+
+div.fieldvalue {
+    float: left;
+    width: 50%;
+}
+
+.register { 
+    margin : 200px;
+    height: 200px;
+    position: relative;
+}
+
+.register form {
+    width : 300px;
+    margin: 0;
+    padding: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+table td.floating-row a {
+    float : left;
+    padding-top: 28px;
+}
+
+table td.floating-row input[type="image"] {
+    float : right;
+}

@@ -1,0 +1,43 @@
+body {
+    background-color: chartreuse;
+}
+
+table {
+    width: 280px;
+    border: 3px solid #73AD21;
+}
+
+.login { 
+    margin : 200px;
+    height: 200px;
+    position: relative;
+}
+
+.login form {
+    width : 300px;
+    margin: 0;
+    padding: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+input[type=text], input[type=password] {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+table td.floating-row a { 
+    float: left;
+    border: 3px solid #73AD21;
+    padding-top: 28px;
+}
+
+table td.floating-row input[type="image"] { 
+    float: right;
+    border: 3px solid #73AD21;
+}
