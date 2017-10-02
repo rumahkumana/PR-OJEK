@@ -4,21 +4,25 @@ body {
 }
 
 div.profile-container-top {
+    width: 100%;
+    height: 100%;
     display: block;
     border: 3px solid red;
 }
 
-div.profile-container-top::after{
-    content: "";
-    clear: both;
-    display: table;
-}
 a.PR-OJEK-logo {
+    width: auto;
+    overflow: hidden;
+    padding-top: 18px;
+    padding-left: 10px;
+    height: 50px;
     float: left;
     border: 3px solid #73AD21;
 }
 div.username-identifier-and-control{
-    float: right;
+    width: 100%;
+    margin-left: 93%;
+    border: 3px solid #73AD21;
 }
 div.profile-topnavigation ul {
     clear: left;
@@ -30,33 +34,42 @@ div.profile-topnavigation ul {
     border: 3px solid black;
 }
 div.profile-topnavigation li {
-    width: 30%;
+    width: 33.33333%;
     float: left;
-    border: 3px solid #73AD21;
 }
 div.profile-topnavigation li a {
+    width: 100%;
     display: block;
     font-family: sans-serif;
-    color: dimgrey;
+    background-color: black;
+    color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding-top: 2em;
+    padding-bottom: 2em;
     border: 1px grey;
     text-decoration: none;
 }
 div.profile-topnavigation li a:hover {
-    background-color: lightgrey;
-    color: white;
+    background-color: white;
+    color: black;
 }
 div.profile-update {
     display: block;
     width: 100%;
     border: 3px solid #73AD21;
 }
-div.profile-update p {
-    float: left;
+div.profile-update {
+    height: 7em;
 }
-div.profile-update img {
+div.profile-update p {
+    font-size: 2em;
+    font-family: fantasy;
+    float: left;
+    margin-left: 20px;
+}
+div.profile-update button {
     float: right;
+    margin-top: 28px;
 }
 div.profile-and-preferred-locations-main {
     position: relative;
@@ -64,6 +77,24 @@ div.profile-and-preferred-locations-main {
 div.user-profile {
     text-align: center;
 }
-#userpp {
-    margin-left: 100px;
+#preferred-locations-text {
+    font-family: fantasy;
+    font-size: 2em;
+    float:left;
+    margin-left: 20px;
+}
+#preferred-locations-update-button {
+    float: right;
+    margin-top: 28px
+}
+div.preferred-locations-text {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 5em;
+    border: 3px solid #73AD21;
+}
+div.user-preferred-locations {
+    display: block;
+    width: 100%;
 }

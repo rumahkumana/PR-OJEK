@@ -24,10 +24,10 @@
         <div class="profile-and-preferred-locations-main">
             <div class="profile-update">
                 <p id="profile-update-text"> My Profile</p>
-                <button type="button" name="profile-update-button" onclick="location.href='/www/edit-profile.html'"><img src="src/edit_button.PNG"></button>
+                <button type="button" id="profile-update-button" onclick="location.href='/www/edit-profile.html'"><img src="src/edit_button.PNG"></button>
             </div>
             <div class="user-profile">
-                <img src="src/profile_sample_circle.PNG">
+                <img id="userpp" src="src/profile_sample_circle.PNG">
                 <p id="username">@Martin</p>
                 <p id="user-full-name"> Martin Lutta Putra </p>
                 <div class="driver-status-and-ratings">
@@ -41,11 +41,19 @@
                 <p id="user-phone"> 085780058876 </p>
             </div>
             <div class="user-preferred-locations">
-                <p id="preferred-locations-text"> Preferred locations : </p>
-                <button type="button" name="preferred-locations-update-button" onclick="location.href = 'edit-preferred-locations.html'"><img src="src/edit_button.PNG"></button>
+                <div class="preferred-locations-text"> 
+                    <p id="preferred-locations-text"> Preferred locations : </p>
+                    <button type="button" id="preferred-locations-update-button" onclick="location.href = 'edit-preferred-locations.html'"><img src="src/edit_button.PNG"></button>
+                </div>
                 <div class="user-preferred-locations-list">
                     <ul id="locations-list">
-                        <li id="item1"> Bandung </li>
+                        <li id="item1">
+                            <ul> Bandung
+                                <li>
+                                    Tamansari
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
