@@ -1,29 +1,38 @@
 body {
-    margin: 0;
-    padding: 0;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 div.profile-container-top {
     width: 100%;
     height: 100%;
     display: block;
-    border: 3px solid red;
 }
 
 a.PR-OJEK-logo {
     width: auto;
+    height: 100%;
     overflow: hidden;
     padding-top: 18px;
     padding-left: 10px;
     height: 50px;
     float: left;
-    border: 3px solid #73AD21;
 }
 div.username-identifier-and-control{
-    width: 100%;
-    margin-left: 93%;
-    border: 3px solid #73AD21;
+    line-height: 5px;
+    text-align: right;
+    float: right;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
 }
+
+div.username-identifier-and-control a {
+    font-weight: 800;
+}
+
+
 div.profile-topnavigation ul {
     clear: left;
     clear: right;
@@ -31,7 +40,7 @@ div.profile-topnavigation ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    border: 3px solid black;
+    border-right: 1px solid black;
 }
 div.profile-topnavigation li {
     width: 33.33333%;
@@ -42,46 +51,68 @@ div.profile-topnavigation li a {
     display: block;
     font-family: sans-serif;
     background-color: black;
-    color: white;
+    font-size: 1.5em;
+    color: black;
     text-align: center;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     border: 1px grey;
     text-decoration: none;
+    background-color: white;
+    border: 1px solid black;
+    border-right: 1px solid black;
 }
 div.profile-topnavigation li a:hover {
-    background-color: white;
+    background-color: rgba(70,93,67,0.2);
     color: black;
 }
+
+#active {
+    background-color: rgb(70,93,67);
+    color: white;
+}
+
 div.profile-update {
+    padding-top: 0px;
     display: block;
     width: 100%;
-    border: 3px solid #73AD21;
-}
-div.profile-update {
     height: 7em;
 }
+
 div.profile-update p {
     font-size: 2em;
     font-family: fantasy;
     float: left;
-    margin-left: 20px;
 }
 div.profile-update button {
     float: right;
     margin-top: 28px;
 }
 div.profile-and-preferred-locations-main {
-    position: relative;
+    font-family: verdana, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 div.user-profile {
     text-align: center;
+    font-size: 20px;
+    line-height: 5px;
 }
+#username {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+#hi-username {
+    font-weight: bold;
+    font-size: 1em;
+}
+
 #preferred-locations-text {
     font-family: fantasy;
     font-size: 2em;
     float:left;
-    margin-left: 20px;
 }
 #preferred-locations-update-button {
     float: right;
@@ -92,9 +123,20 @@ div.preferred-locations-text {
     display: block;
     width: 100%;
     height: 5em;
-    border: 3px solid #73AD21;
 }
 div.user-preferred-locations {
     display: block;
     width: 100%;
+}
+
+div.user-preferred-locations-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+div.user-preferred-locations-list li:before {
+    content: "\0025B6";
 }

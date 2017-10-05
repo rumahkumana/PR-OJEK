@@ -12,15 +12,15 @@ div.fieldvalue {
 }
 
 .register { 
-    background-color: chartreuse;
+    background-color: rgb(139,189,60);
     margin-left: auto;
     margin-right: auto;
     margin-top: 6em;
     width: 25em;
-    height: 25em;
+    height: 28em;
     position: relative;
-    border: 10px solid #73AD21;
-    border-radius: 50px;
+    border: 10px solid  rgb(2,112,44);
+    border-radius: 80px;
 }
 
 div.header {
@@ -29,6 +29,7 @@ div.header {
 }
 
 #sign-up-text {
+    color: rgb(2,112,44);
     padding-top: 0px;
     font-size: 3em;
     text-align: center;
@@ -36,6 +37,7 @@ div.header {
 
 
 .register form {
+    color: rgb(2,112,44);
     width : 300px;
     margin: 0;
     padding: 150px;
@@ -53,4 +55,16 @@ table td.floating-row a {
 
 table td.floating-row input[type="image"] {
     float : right;
+}
+
+#username, #email {
+    width: 85%;
+}
+
+#isUsernameExist, #isEmailExist {
+    width: 5%;
+    padding: 0;
+    margin: 0;
+    color: red;
+    font-size: 1em;
 }

@@ -5,26 +5,26 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale= 1">
         <meta name="Description" content="Tugas besar 1 IF3110-Web Based Development 2017/2018 Kelompok HULA">
-        <link rel="stylesheet" type="text/css" href="login-style.css">
+        <link rel="stylesheet" type="text/css" href="css/login-style.css">
     </head>
     <body>
         <div class="login">
             <div id="header"> 
                 <p id="sign-up-text"> <span id="line1">- </span>LOGIN<span id="line2">-</span> </p>
             </div>
-            <form class="login-form" action="/login.php" method="get" id="login_form" autocomplete="on">
+            <form class="login-form" action="php/login.php" method="POST" id="login_form">
                 <table id="login-table">
                     <tr>
-                        <td> Userame </td>
-                        <td> <input type="text" name="userid" autofocus> </td>
+                        <td> Username </td>
+                        <td> <input type="text" name="username" autofocus> </td>
                     </tr>
                     <tr>
                         <td> Password </td>
-                        <td> <input type="password" name="userpassword" > </td>
+                        <td> <input type="password" name="user-password" > </td>
                     </tr>
                     <tr>
                         <td class="floating-row" colspan="2">
-                            <a href="/www/register.html"> Don't have an account yet ? </a>
+                            <a href="register.html"> Don't have an account yet ? </a>
                             <input type="image" src="src/login_submit.PNG" alt="Submit" width="48" height="48">
                         </td>
                     </tr>

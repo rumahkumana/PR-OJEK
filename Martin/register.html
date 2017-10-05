@@ -4,18 +4,26 @@
         <title>PR-OJEK : Register </title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale= 1">
-        <link rel="stylesheet" type="text/css" href="register-style.css">
+        <link rel="stylesheet" type="text/css" href="css/register-style.css">
     </head>
     <body>
         <div class="register">
             <div id="header"> 
                 <p id="sign-up-text"> <span id="line1">- </span>REGISTER<span id="line2">-</span> </p>
             </div>
-            <form class="register-form" action="/register.php" method="post" id="register_form" autocomplete="on">
+            <form class="register-form" action="php/register.php" method="post" id="register_form">
                 <table id="register-table">
                     <tr>
-                        <td> Name </td>
-                        <td> <input type="password" name="userpassword"> </td>
+                        <td> Your Name </td>
+                        <td> <input type="text" name="user-fullname"> </td>
+                    </tr>
+                    <tr>
+                        <td> Username </td>
+                        <td> <input type="text" id= "username" name="username" onkeyup="checkInDB()"> </td> <td id="isUsernameExist"> </td>
+                    </tr>
+                    <tr>
+                        <td> Email </td>
+                        <td> <input type="text" id= "email" name="user-email" onkeyup="checkInDB()"> </td> <td id="isEmailExist"> </td>
                     </tr>
                     <tr>
                         <td> Password </td>
@@ -26,24 +34,23 @@
                         <td> <input type="password" name="user-password-confirm"> </td>
                     </tr>
                     <tr>
-                        <td> Email </td>
-                        <td> <input type="text" name="user-email"> </td>
-                    </tr>
-                    <tr>
                         <td> Phone Number </td>
                         <td> <input type="text" name="user-phone"> </td>
                     </tr>
                     <tr>
-                        <td colspan="2"> <input type="checkbox"  value="sign_as_driver"> Also sign me up as a driver ! </td>
+                        <td colspan="2"> <input type="checkbox"  name="user-driver-status" value="sign_as_driver"> Also sign me up as a driver ! </td>
                     </tr>
                     <tr>
                         <td class="floating-row" colspan="2">
-                            <a href="/www/index.html"> Already have an acoount ? </a>
+                            <a href="login.html"> Already have an acoount ? </a>
                             <input type="image" src="src/register_submit.PNG" alt="Submit" width="48" height="48">
                         </td>
                     </tr>
                 </table>
+                <p id="test"></p>
             </form>
         </div>
     </body>
-</html>
+    <script src="js/register.js">
+    </script>
+</html> 

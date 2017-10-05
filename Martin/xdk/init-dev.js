@@ -6,7 +6,7 @@
 
 // This file is optional.
 // It is only required if you choose to use the app.Ready event it generates.
-// Note the reference that includes it in the index.html file.
+// Note the reference that includes it in the login.html file.
 
 
 /*
@@ -22,7 +22,7 @@
  * "device ready" or "document ready" or "window load" or similar events.
  *
  * You should not have to modify anything in this file to use it. See the example
- * index.html file that accompanies this file (in its sample repo location) for
+ * login.html file that accompanies this file (in its sample repo location) for
  * recommendations on the best placement of this file relative to other files and
  * for recommendations regarding the loading of other JavaScript files.
  *
@@ -31,7 +31,7 @@
  * It is highly recommended that you leave them in your app, they will not unduly
  * slow down or burden your application.
  *
- * There are many comments in this file and the accompanying index.html file.
+ * There are many comments in this file and the accompanying login.html file.
  * Please read the comments within for details and further documentation.
  *
  * BTW: "dev" means "device" in this context, not "develop," because it grew out
@@ -44,7 +44,7 @@
 
 
 
-window.dev = window.dev || {} ;         // could be predefined in index.html file...
+window.dev = window.dev || {} ;         // could be predefined in login.html file...
 
 
 
@@ -79,7 +79,7 @@ dev.consoleLog = function() {       // only emits console.log messages if dev.LO
 // Lowering dev.BROWSER speeds up detection of browser scenario...
 // ...at expense of possible false detects of browser environment...
 // ...probably okay to go as low as 3000ms, depends on external libraries, etc.
-// dev.NAME = dev.NAME || ## ; allows for override of values in index.html
+// dev.NAME = dev.NAME || ## ; allows for override of values in login.html
 
 if( typeof window.cordova !== "undefined" ) // if real cordova.js is present, we should detect a "deviceready"...
     dev.BROWSER = dev.BROWSER || 7000 ;     // ...best if >5 seconds when Cordova is expected to be present
